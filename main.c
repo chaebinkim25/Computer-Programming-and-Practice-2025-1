@@ -1,4 +1,4 @@
-/* 0부터 127까지에 해당하는 모든 문자를 출력해보기 */
+﻿/* 0부터 127까지에 해당하는 모든 문자를 출력해보기 */
 /* 
  * 함수를 반복실행해주는 repeat_f 함수를 써서 여러 숫자에 대해 해당하는 문자의 값이 무엇인지 출력해보세요.
  * repeat_f 함수는 인자로 리턴타입이 void, 매개변수타입이 int인 함수의 주소를 받습니다. 
@@ -52,10 +52,15 @@ void print_char(int i);
 void print_int(int i);
 
 /* To Do: 반환타입이 void고, 매개변수를 int 타입으로 받는 함수를 정의해보세요. 매개변수의 값을 문자, 숫자 형식으로 화면에 출력해보세요. */
-
+void f(int i) {
+	print_int(i);
+	print_char(':');
+	print_char(i);
+	print_char('\n');
+}
 
 int main() {
 	/* To Do: 새로 정의한 함수의 주소를 넣어서 repeat_f 함수를 실행해보세요 */
-
+	repeat_f(&f);
 	return 0;
 }
