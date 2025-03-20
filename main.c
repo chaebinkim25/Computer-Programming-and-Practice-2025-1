@@ -1,4 +1,4 @@
-/* 큰 정수를 입력받아서 작은 정수를 출력하기 */
+﻿/* 큰 정수를 입력받아서 작은 정수를 출력하기 */
 /* 
  * 주어진 input_uint, print_uchar, uint_to_uchar 함수를 활용해서 
  * 8자리 이하의 16진수를 입력받고, 화면에는 가장 작은 2자리만 출력해보세요
@@ -59,7 +59,9 @@ unsigned char uint_to_uchar (unsigned int x);
 
 int main() {
 	/* To Do: 주어진 함수들을 활용해서 16진수 숫자를 입력받고, 화면에 출력해보세요 */
-
+	unsigned int ui = input_uint();
+	unsigned char uc = uint_to_uchar(ui);
+	print_uchar(uc);
 	
 	return 0;
 }
