@@ -1,4 +1,4 @@
-/* 문자를 입력받아서 문자를 출력하기 */
+﻿/* 문자를 입력받아서 문자를 출력하기 */
 /* 
  * 주어진 print_3chars, input_char 함수를 활용해서 
  * 문자 세개를 입력받고, 화면에 입력받은 문자들을 출력해보세요.
@@ -39,7 +39,10 @@ char input_char();
 
 int main() {
 	/* To Do: 주어진 함수들을 활용해서 문자 세개를 입력받고, 화면에 출력해보세요 */
+	char a = input_char();
+	char b = input_char();
+	char c = input_char();
+	print_3chars(a, b, c);
 
-	
 	return 0;
 }
