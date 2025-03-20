@@ -1,4 +1,4 @@
-/* 문자를 입력받고 포맷팅해서 출력하기 */
+﻿/* 문자를 입력받고 포맷팅해서 출력하기 */
 /* 
  * 주어진 add_to_format, print_formatted, input_char 함수를 활용해서 
  * 포맷을 만들고, 포맷에 따라서 화면에 입력받은 문자 하나를 문자 포맷과 숫자 포맷으로 출력해보세요.
@@ -52,7 +52,13 @@ char input_char();
 
 int main() {
 	/* To Do: 주어진 함수들을 활용해서 문자 하나를 입력받고, 문자 형식과 숫자 형식으로 출력해보세요 */
-
+	char c = input_char();
+	add_to_format('%');
+	add_to_format('c');
+	add_to_format(':');
+	add_to_format('%');
+	add_to_format('d');
+	print_formatted(c, c);
 	
 	return 0;
 }
