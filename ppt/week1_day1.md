@@ -54,7 +54,7 @@ Peeling back the software layer, we look at the actual language the software use
 
 Moving from the instructions to the physical engine that reads and executes them.
 
-- **central processing unit:** which part of computer executes instrucionts?
+- **central processing unit:** which part of computer executes instructions?
   The CPU contains the calculating unit (*Arithmetic Logic Unit*), fast but small memory (*register*),
   and control unit (*instruction decoder*).
   It is responsible for the fetch-decode-execute-writeback cycle of program instructions.
