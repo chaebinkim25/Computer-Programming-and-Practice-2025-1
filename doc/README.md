@@ -1,1 +1,1 @@
-
+- macOS에서 vscode 설치 및 C 개발 환경 구축 방법: [vscode 홈페이지](https://code.visualstudio.com/docs/cpp/config-clang-mac) 참조
