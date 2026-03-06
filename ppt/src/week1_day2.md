@@ -57,15 +57,54 @@
   You can set "breakpoints" to pause execution, step through your C code line by line, and inspect the exact values stored in your variables at any given moment.
 
 - **`+`:** how do we add values?
+  The addition operator.
+  It performs basic mathematical addition on two numeric operands, calculating their sum.
 
-- **`-`:**
-- **`*`:**
-- **`/`:**
-- **`%`:**
-- **`=`:**
-- **declaration:**
-- **variable name:**
-- **`()` in expression:**
+- **`-`:** how do we subtract values?
+  The subtraction operator.
+  It subtracts the right operand from the left operand.
+  It can also be placed directly in front of a single value as a unary operator to
+  denote a negative number.
+  
+- **`*`:** how do we multiply values?
+  The multiplication operator.
+  It calculates the product of two numeric operands.
+  
+- **`/`:** how do we divide values?
+  The division operator.
+  It divides the left operand by the right operand.
+  Crucially in C, if both operands are integers,
+  it performs integer division—meaning it entirely discards any fractional remainder and
+  returns only the whole number.
+
+- **`%`:** how do we find the remainder?
+  The modulo operator.
+  It divides the left integer operand by the right integer operand and returns only the remainder.
+  This is highly useful for checking if a number is even or odd,
+  or for wrapping values around a specific range.
+  
+- **`=`:** how do we store a value?
+  The assignment operator.
+  It computes the value of the expression on its right side and
+  stores that result into the memory location of the variable named on its left side.
+  (Note: It does not check for mathematical equality, which is handled by `==`).
+  
+- **declaration:** how do we introduce a new variable?
+  A mandatory statement that informs the compiler about a new variable before it is ever used.
+  It defines both the variable's name and its data type (like int),
+  which tells the compiler exactly how much system memory needs to be reserved for it.
+
+- **variable name:** how do we refer to stored data?
+  An identifier chosen by the programmer to represent a specific location in the computer's memory.
+  It must follow strict rules (e.g., it must start with a letter or underscore, and cannot contain spaces)
+  and should ideally describe the data it holds to make the code readable.
+  
+- **`()` in expression:** how do we control the order of math?
+  Parentheses are used to group sub-expressions and
+  override the default mathematical order of operations (precedence).
+  The C compiler will always calculate the innermost expressions enclosed in parentheses before
+  moving outward.
+
 - **code:** how do we launch our editor?
   A command-line instruction. 
   Typing code . in the terminal tells the system to open the current directory inside the Visual Studio Code editor, 
@@ -76,9 +115,23 @@
   A lightweight, powerful source-code editor that provides features like syntax highlighting, code completion, and integrated debugging. 
   It interfaces perfectly with WSL, allowing you to edit files on the Windows side while compiling them on the Linux side.
 
-- **json:**
-- **launch.json**
-- **c standard:***
+- **json:** how do we format configuration data?
+  JavaScript Object Notation.
+  It is a lightweight, widely universally recognized, text-based format used for structuring data.
+  It organizes information into easy-to-read "key-value" pairs and arrays,
+  making it the standard way to write configuration files for modern development tools.
+  
+- **launch.json:** how do we tell VS Code to debug?
+  A specific JSON configuration file used internally by Visual Studio Code.
+  It dictates exactly how the editor should launch your debugger (like GDB),
+  instructing it on which compiled executable to run, what command-line arguments to pass,
+  and how to map the running binary back to your original source code.
+  
+- **c standard:** how do we ensure code works everywhere?
+  The formal, standardized specification of the C programming language (such as C89, C99, or C11).
+  It acts as a rigid rulebook that defines the exact syntax, compiler behavior,
+  and standard library functions, ensuring that a program written on one operating system will
+  behave identically when compiled on another system that strictly follows the same standard.
 
 
 
