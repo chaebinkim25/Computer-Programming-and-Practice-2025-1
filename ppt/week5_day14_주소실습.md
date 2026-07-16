@@ -593,5 +593,4 @@ arr_ptr = &arr2d[0];
 arr_ptr = arr2d;
 ```
 
-
 ---
