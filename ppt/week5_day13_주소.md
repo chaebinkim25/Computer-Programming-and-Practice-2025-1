@@ -605,5 +605,4 @@ int user_count = 2;
 int *user_infos[2] = {user_a, user_b};
 ```
 
-
 ---
